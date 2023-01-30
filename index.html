@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="generateCaptcha();">
+    <center>
+    <h1>Pleace verify Your Real Existance!</h1>
+    <table>
+        <tr>
+            <td>
+             <input type="text" id="mainCaptcha" readonly="readonly" />
+             <input type="button" id="refresh" value="Refresh" onclick="generateCaptcha();" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" id="textinput" required/>
+                <br>
+                <input type="button" id="Button1" value="Check" onclick="checkValidCaptcha();"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span id="error" style="color: red;"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span id="success" style="color: green;"></span>
+            </td>
+        </tr>
+    </table>
+
+</center>
+<script src="index.js"></script>
+</body>
+</html>
+
+
